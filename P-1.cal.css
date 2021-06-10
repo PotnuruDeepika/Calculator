@@ -1,0 +1,48 @@
+body {
+    background-color: darksalmon;
+}
+
+input {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    border-radius: 10px;
+    margin: 10px;
+    color: black;
+    border-style: none;
+}
+
+#calc {
+    text-align: center;
+    margin-top: 20px;
+    font: size 90px;
+}
+
+div.at-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.at-item {
+    color: blueviolet;
+    animation-name: angry-animation;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-duration: normal;
+}
+
+@keyframes angry-animation {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
